@@ -2,7 +2,7 @@
   <v-toolbar fixed>
     <v-toolbar-title>INJEONG</v-toolbar-title>
     <v-spacer></v-spacer>
-    <v-toolbar-items>
+    <v-toolbar-items class="menu">
       <v-btn flat href="/">HOME</v-btn>
       <v-btn flat href="/post">POST</v-btn>
       <v-btn flat href="/portfolio">PORTFOLIO</v-btn>
@@ -23,9 +23,13 @@
         ],
         right: null
       }
+    },
+    methods : {
+      sidebar() {
+
+      }
     }
   }
 </script>
 <style>
-
 </style>
