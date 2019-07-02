@@ -1,6 +1,6 @@
 <template>
   <v-toolbar fixed>
-    <v-toolbar-title>INJEONG</v-toolbar-title>
+    <v-toolbar-title router-link :to="home">INJEONG</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items class="menu">
       <v-btn flat href="/">HOME</v-btn>

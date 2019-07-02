@@ -70,4 +70,10 @@ export default {
 @media only screen and (max-width:600px) {
   .AboutMeImg {display:none;}
 }
+
+/* @media (max-width:600px) {
+  PortfolioList {
+
+  }
+} */
 </style>
