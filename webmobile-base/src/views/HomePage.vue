@@ -5,18 +5,29 @@
     </Header> -->
 
     <ImgBanner imgSrc="https://source.unsplash.com/collection/583479/1600x900">
-      <div style="line-height:1.2em;" slot="text">We will find a way.<br> We always have.</div>
+      <div style="line-height:1.2em;" slot="text">
+        <span style="font:italic;">
+          Everything happens for a reason.
+        </span>
+        <p style="font-size:3vw;">
+          모든 일에는 이유가 있다.
+        </p>
+      </div>
     </ImgBanner>
     <v-container>
       <!-- About Me -->
       <v-layout my-5 justify-center>
         <v-flex xs8>
-          <h2 class="headline mb-3">About Me</h2>
-          <p class="mr-4" style="font-size:2.3vw;">안녕하세요, SSAFY 참가자 여러분!<br/>함께 프로젝트를 진행하게 되어서 기쁩니다. Vue는 어렵지 않습니다. 차근차근 하나씩 따라하다보면 어느새 멋진 블로그가
-            만들어져 있을겁니다! 모두 화이팅 하시고, 꼭 완성해서 좋은 평가 있길 바라겠습니다.</p>
+          <h2 class="headline mb-3">Love Myself</h2>
+          <p class="mr-4" style="font-size:2.3vw;">
+            안녕하세요. 조인정입니다.<br />
+저는 수학과 개발을 좋아합니다.<br />
+현재는 빅데이터에 관심이 있습니다.<br />
+다양한 분야에서 소통이 가능한 개발자가 되겠습니다.
+          </p>
         </v-flex>
         <v-flex xs4 class="AboutMeImg">
-          <v-img :src="getImgUrl('profile.png')" aspect-ratio="1.5"/>
+          <v-img :src="getImgUrl('jeong.jpg')" aspect-ratio="1.5"/>
         </v-flex>
       </v-layout>
 

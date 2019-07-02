@@ -1,6 +1,6 @@
 <template>
   <v-toolbar fixed >
-    <v-toolbar-title>INJEONG</v-toolbar-title>
+    <v-toolbar-title>INJEONG's <p class="d-inline" style="font-size:15px;">생각하는</p> BLOG</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items class="menu">
       <v-btn flat href="/">HOME</v-btn>
