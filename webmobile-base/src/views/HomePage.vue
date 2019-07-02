@@ -1,5 +1,9 @@
 <template>
   <div>
+    <!-- <Header>
+
+    </Header> -->
+
     <ImgBanner imgSrc="https://source.unsplash.com/collection/583479/1600x900">
       <div style="line-height:1.2em;" slot="text">We will find a way.<br> We always have.</div>
     </ImgBanner>
@@ -58,6 +62,15 @@ export default {
 		PostList,
 		RepositoryList
 	},
+  data() {
+    return {
+      drawer: true,
+      items: [
+        'POST', 'PORTFOLIO', 'LOGIN'
+      ],
+      right: null
+  }
+},
 	methods: {
 		getImgUrl(img) {
 			return require('../assets/' + img)
