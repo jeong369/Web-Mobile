@@ -3,7 +3,7 @@
     <v-layout>
 
       <v-flex xs8>
-        <h2 class="font-weight-regular">{{repos.path_with_namespace}}</h2>
+        <h2 class="font-weight-regular" style="font-size:2vw;">{{repos.path_with_namespace}}</h2>
         <p class="subheading mb-1 grey--text text--darken-1 font-weight-light">{{repos.namespace.name}}</p>
       </v-flex>
 

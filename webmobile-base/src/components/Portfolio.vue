@@ -1,5 +1,5 @@
 <template>
-  <v-card>
+  <v-card href="/portfolio">
     <v-img :src="imgSrc" height="200px">
     </v-img>
     <v-card-title primary-title>
@@ -25,6 +25,6 @@ export default {
 		return {
 			//
 		}
-	}
+	},
 }
 </script>

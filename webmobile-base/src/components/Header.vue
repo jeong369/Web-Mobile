@@ -30,6 +30,11 @@
               </v-list>
         </v-menu>
       </div>
+      <div class="upbtn mt-3">
+        <v-btn flat v-on:click="pageup">
+          <i class="material-icons" height="1rem">expand_less</i>
+        </v-btn>
+      </div>
 
 
     </v-toolbar-items>
@@ -49,10 +54,26 @@
         right: null
       }
     },
+    methods: {
+      pageup : function() {
+        // console.log(document.documentElement)
+        // document.documentElement.animate( { scrollTop : 0 }, 680 )
+        document.documentElement.scrollTop = 0;
+        // console.log(document.documentElement)
+        // e.view.scrollTop(0);
+
+      }
+    },
   }
 </script>
+
 <style>
 @media (min-width:600px){
   .sidemenu {display:none;}
+}
+@media (height:0) {
+  .upbtn {
+    display:none;
+  }
 }
 </style>
