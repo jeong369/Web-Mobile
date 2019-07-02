@@ -3,7 +3,7 @@
     <v-flex row>
       <div class="caption">{{formatedDate}}</div>
       <h2 class="color-333 headline font-weight-light">{{title}}</h2>
-      <p class="mb-1 color-666 font-weight-light subheading">{{body}}</p>
+      <p class="content mb-1 color-666 font-weight-light subheading">{{body}}</p>
     </v-flex>
   </v-layout>
 </template>
@@ -33,5 +33,16 @@ export default {
   .h-100 {
     height: 100%;
   }
-</style>
 
+  .content {
+    display: inline-block;
+    width: 200px;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    white-space: normal;
+    line-height: 1.2;
+    height: 3.6em;
+  }
+</style>

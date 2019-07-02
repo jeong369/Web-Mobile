@@ -71,7 +71,7 @@
 @media (min-width:600px){
   .sidemenu {display:none;}
 }
-@media (height:0) {
+@media (height:0px) {
   .upbtn {
     display:none;
   }
