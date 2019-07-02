@@ -4,6 +4,9 @@
     <v-spacer></v-spacer>
     <v-toolbar-items>
       <v-btn flat href="/">HOME</v-btn>
+      <v-btn flat href="/post">POST</v-btn>
+      <v-btn flat href="/portfolio">PORTFOLIO</v-btn>
+      <v-btn flat href="/login">LOGIN</v-btn>
     </v-toolbar-items>
   </v-toolbar>
 </template>
