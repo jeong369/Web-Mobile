@@ -4,6 +4,7 @@
     </v-img>
     <v-card-title primary-title>
       <div>
+        <span>{{id}}</span>
         <div class="headline">{{title}}</div>
         <span class="grey--text">{{body}}</span>
       </div>
@@ -27,4 +28,3 @@ export default {
 	}
 }
 </script>
-
