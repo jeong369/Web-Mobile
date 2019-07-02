@@ -30,7 +30,7 @@
               </v-list>
         </v-menu>
       </div>
-      <div class="upbtn mt-3">
+      <div id="upbtn" class="mt-3" style="display:none;">
         <v-btn flat v-on:click="pageup">
           <i class="material-icons" height="1rem">expand_less</i>
         </v-btn>
@@ -56,14 +56,19 @@
     },
     methods: {
       pageup : function() {
-        // console.log(document.documentElement)
-        // document.documentElement.animate( { scrollTop : 0 }, 680 )
         document.documentElement.scrollTop = 0;
-        // console.log(document.documentElement)
-        // e.view.scrollTop(0);
-
       }
     },
+  }
+  window.onscroll = function() {
+    var upbtn = document.getElementById("upbtn")
+    if (document.documentElement.scrollTop != 0) {
+      upbtn.style.display = "block";
+    }
+    else {
+      upbtn.style.display = "none";
+    }
+
   }
 </script>
 
@@ -71,9 +76,9 @@
 @media (min-width:600px){
   .sidemenu {display:none;}
 }
-@media (height:0px) {
+/* @media (height:0px) {
   .upbtn {
     display:none;
   }
-}
+} */
 </style>
