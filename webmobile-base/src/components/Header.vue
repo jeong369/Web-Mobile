@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar>
+  <v-toolbar fixed>
     <v-toolbar-title>INJEONG</v-toolbar-title>
     <v-spacer></v-spacer>
     <v-toolbar-items>
