@@ -71,5 +71,13 @@ G-->H(4주 프로젝트)
 
 
 
+### Req. 1-2 Header 영역에 블로그 제목 노출 구현
+
+- App.vue에 Header/Footer components로 불러와서 모든 페이지에 노출되도록 구현
+
+
+
+
+
 
 
