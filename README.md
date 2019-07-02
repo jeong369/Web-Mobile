@@ -63,5 +63,13 @@ G-->H(4주 프로젝트)
 
 
 
+## 기능 구현
+
+### Req. 1-14 코드 레벨 네비게이션 영역을 Header 컴포넌트로 분리
+
+- Header / Footer component로 분리
+
+
+
 
 
