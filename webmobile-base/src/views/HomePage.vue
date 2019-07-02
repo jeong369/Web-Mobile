@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ImgBanner imgSrc="https://source.unsplash.com/5brvJbR1Pn8/1600x900">
+    <ImgBanner imgSrc="https://source.unsplash.com/collection/583479/1600x900">
       <div style="line-height:1.2em;" slot="text">We will find a way.<br> We always have.</div>
     </ImgBanner>
     <v-container>
