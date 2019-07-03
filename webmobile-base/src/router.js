@@ -36,7 +36,7 @@ export default new Router({
 		},
     {
 			path: '/portfolio/new',
-			name: 'detailpage',
+			name: 'portfoliodetailpage',
 			component: PortfolioDetailPage
 		},
   ]
