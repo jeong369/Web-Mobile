@@ -20,10 +20,9 @@
         <v-flex xs8>
           <h2 class="headline mb-3">Love Myself</h2>
           <p class="mr-4" style="font-size:2.3vw;">
-            안녕하세요. 조인정입니다.<br />
-저는 수학과 개발을 좋아합니다.<br />
-현재는 빅데이터에 관심이 있습니다.<br />
-다양한 분야에서 소통이 가능한 개발자가 되겠습니다.
+            안녕하세요. 조인정입니다.<br />저는 수학과 개발을 좋아합니다.<br />
+            현재는 빅데이터에 관심이 있습니다.<br />
+            다양한 분야에서 소통이 가능한 개발자가 되겠습니다.
           </p>
         </v-flex>
         <v-flex xs4 class="AboutMeImg">
@@ -87,6 +86,12 @@ export default {
 			return require('../assets/' + img)
 		}
 	},
+  created: function() {
+    if (navigator.userAgent.toLowerCase().indexOf("chrome") <= -1) {
+      // != 81
+      alert("해당 사이트는 크롬에 최적화 되어 있습니다.")
+    }
+  }
 }
 </script>
 
@@ -95,9 +100,4 @@ export default {
   .AboutMeImg {display:none;}
 }
 
-/* @media (max-width:600px) {
-  PortfolioList {
-
-  }
-} */
 </style>
