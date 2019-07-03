@@ -4,7 +4,7 @@
       <div style="line-height:1.2em;font-size:1.2em;" slot="text">Portfolio</div>
     </ImgBanner>
     <v-container>
-
+      <v-btn color="success" dark href="/portfolio/new"><v-icon size="25" class="mr-2">fa-plus</v-icon>새 글 작성</v-btn>
       <!-- Portfolio -->
       <v-layout>
         <v-flex xs12>

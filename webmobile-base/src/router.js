@@ -4,8 +4,11 @@ import HomePage from './views/HomePage.vue'
 import PostPage from './views/PostPage.vue'
 import PortfolioPage from './views/PortfolioPage.vue'
 import LoginPage from './views/LoginPage.vue'
+import PortfolioDetailPage from './views/PortfolioDetailPage.vue'
+
 
 Vue.use(Router)
+// Vue.use(Vuetify)
 
 export default new Router({
   mode: 'history',
@@ -30,6 +33,11 @@ export default new Router({
 			path: '/login',
 			name: 'login',
 			component: LoginPage
-		}
+		},
+    {
+			path: '/portfolio/new',
+			name: 'detailpage',
+			component: PortfolioDetailPage
+		},
   ]
 })
