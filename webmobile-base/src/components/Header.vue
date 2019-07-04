@@ -96,7 +96,7 @@
 </script>
 
 <style>
-@media (min-width:600px){
+@media (min-width:900px){
   .sidemenu {display:none;}
 }
 /* @media (height:0px) {
