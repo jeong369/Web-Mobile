@@ -29,6 +29,14 @@ export default {
 		return {
 			//
 		}
-	}
+	},
+  // beforeCreated() {
+  //   if (navigator.userAgent.toLowerCase().indexOf("chrome") != 81) {
+  //     // != 81
+  //     alert("해당 사이트는 크롬에 최적화 되어 있습니다.")
+  //   } else {
+  //     console.log("1")
+  //   }
+  // }
 }
 </script>

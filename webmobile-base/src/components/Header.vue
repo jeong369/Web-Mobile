@@ -75,6 +75,7 @@
                return false;
              }
           } else if (window.chrome) {
+            console.log(window.chrome)
               alert("현재 브라우저에서는 Ctrl+D키를 누르시면 즐겨찾기에 추가하실 수 있습니다.");
            }
         } else {
