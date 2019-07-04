@@ -17,6 +17,7 @@
 import store from './store'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import axios from 'axios'
 
 export default {
 	name: 'App',
@@ -30,13 +31,7 @@ export default {
 			//
 		}
 	},
-  // beforeCreated() {
-  //   if (navigator.userAgent.toLowerCase().indexOf("chrome") != 81) {
-  //     // != 81
-  //     alert("해당 사이트는 크롬에 최적화 되어 있습니다.")
-  //   } else {
-  //     console.log("1")
-  //   }
-  // }
+methods: {
+},
 }
 </script>
