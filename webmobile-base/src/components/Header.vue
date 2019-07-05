@@ -1,7 +1,10 @@
 <template>
   <v-toolbar fixed >
-    <v-toolbar-title id="title">INJEONG's <span style="font-size:15px;">
+    <v-toolbar-title id="title">
+      INJEONG's <span style="font-size:15px;">
       생각하는</span> BLOG</v-toolbar-title>
+      <img style="color:blue" :src=weathers.icon />
+      <v-text>{{weathers.description}}</v-text>
     <v-spacer></v-spacer>
     <v-toolbar-items class="menu">
       <v-btn flat><i v-on:click="register" id="staricon" class="material-icons" style="color:yellowgreen">star_border</i></v-btn>
@@ -45,6 +48,9 @@
 </template>
 
 <script>
+import axios from 'axios'
+
+
   export default {
     name: 'Header',
     data () {
@@ -53,10 +59,23 @@
         items: [
           'POST', 'PORTFOLIO', 'LOGIN'
         ],
+        weathers : {
+          description : null,
+          icon : null
+        },
         right: null
       }
     },
     methods: {
+      getWeather : function() {
+       var apiURL = "http://api.openweathermap.org/data/2.5/weather?q=Daejeon&appid=4066c90602814a55bc191d75b6d6dd38";
+       axios.get(apiURL)
+         .then(response => {
+           // console.log(response)
+           this.weathers.description = response.data.weather[0].description
+           this.weathers.icon = "http://openweathermap.org/img/wn/" + response.data.weather[0].icon + "@2x.png"
+         })
+      },
       pageup : function() {
         document.documentElement.scrollTop = 0;
       },
@@ -83,6 +102,10 @@
         }
       }
     },
+    mounted() {
+      this.getWeather()
+
+    }
   }
   window.onscroll = function() {
     var upbtn = document.getElementById("upbtn")
@@ -92,7 +115,6 @@
     else {
       upbtn.style.display = "none";
     }
-
   }
 </script>
 

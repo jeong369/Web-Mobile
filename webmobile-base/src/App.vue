@@ -17,7 +17,6 @@
 import store from './store'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import axios from 'axios'
 
 export default {
 	name: 'App',
