@@ -5,9 +5,12 @@ import PostPage from './views/PostPage.vue'
 import PortfolioPage from './views/PortfolioPage.vue'
 import LoginPage from './views/LoginPage.vue'
 import PortfolioDetailPage from './views/PortfolioDetailPage.vue'
+import SignUp from './views/SignUp.vue'
+import VeeValidate from 'vee-validate'
 
-
+Vue.use(VeeValidate)
 Vue.use(Router)
+
 // Vue.use(Vuetify)
 
 export default new Router({
@@ -38,6 +41,11 @@ export default new Router({
 			path: '/portfolio/new',
 			name: 'portfoliodetailpage',
 			component: PortfolioDetailPage
+		},
+    {
+			path: '/signup',
+			name: 'signup',
+			component: SignUp
 		},
   ]
 })
