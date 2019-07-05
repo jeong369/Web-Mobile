@@ -3,12 +3,10 @@
     <v-toolbar-title id="title">
       INJEONG's <span style="font-size:15px;">
       생각하는</span> BLOG</v-toolbar-title>
-      <img style="color:blue" :src=weathers.icon />
-      <v-text>{{weathers.description}}</v-text>
     <v-spacer></v-spacer>
     <v-toolbar-items class="menu">
       <v-btn flat><i v-on:click="register" id="staricon" class="material-icons" style="color:yellowgreen">star_border</i></v-btn>
-      <v-btn flat href="/">HOME</v-btn>
+      <v-btn flat href="/"><v-icon>home</v-icon></v-btn>
       <v-btn flat href="/post" class="hidden-sm-and-down">POST</v-btn>
       <v-btn flat href="/portfolio" class="hidden-sm-and-down">PORTFOLIO</v-btn>
       <v-btn flat href="/login" class="hidden-sm-and-down">LOGIN</v-btn>
@@ -35,6 +33,10 @@
               </v-list>
         </v-menu>
       </div>
+      <v-btn flat style="background-color:skyblue">
+          <img style="height:40px; color:blue" :src=weathers.icon>
+          <v-text style="">{{weathers.description}}</v-text>
+      </v-btn>
       <div id="upbtn" class="mt-3" style="display:none;">
         <v-btn flat v-on:click="pageup">
           <i class="material-icons" height="1rem">expand_less</i>
@@ -44,7 +46,6 @@
 
     </v-toolbar-items>
   </v-toolbar>
-
 </template>
 
 <script>
@@ -73,7 +74,7 @@ import axios from 'axios'
          .then(response => {
            // console.log(response)
            this.weathers.description = response.data.weather[0].description
-           this.weathers.icon = "http://openweathermap.org/img/wn/" + response.data.weather[0].icon + "@2x.png"
+           this.weathers.icon = "http://openweathermap.org/img/wn/" + response.data.weather[0].icon + ".png"
          })
       },
       pageup : function() {

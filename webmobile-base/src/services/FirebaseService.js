@@ -68,5 +68,18 @@ export default {
 		}).catch(function(error) {
 			console.error('[Google Login Error]', error)
 		})
-	}
+	},
+	loginWithFacebook() {
+		let provider = new firebase.auth.FacebookAuthProvider();
+		return firebase.auth().signInWithPopup(provider).then(function(result) {
+  		let token = result.credential.accessToken;
+  		var user = result.user;
+			return result
+		}).catch(function(error) {
+		  var errorCode = error.code;
+		  var errorMessage = error.message;
+		  var email = error.email;
+		  var credential = error.credential;
+		});
+	},
 }
