@@ -64,6 +64,7 @@ import PortfolioList from '../components/PortfolioList'
 import PostList from '../components/PostList'
 import RepositoryList from '../components/RepositoryList'
 
+
 export default {
 	name: 'HomePage',
 	components: {
@@ -84,7 +85,8 @@ export default {
 	methods: {
 		getImgUrl(img) {
 			return require('../assets/' + img)
-		}
+    },
+    
 	},
 }
 </script>

@@ -6,7 +6,6 @@
     </ImgBanner>
     <v-container>
         <SignUp></SignUp>
-
     </v-container>
     </div>
 </template>
@@ -20,6 +19,15 @@ export default {
   components : {
     ImgBanner,
     SignUp,
+  },
+  methods : {
+    // writeUserData(userId, name, email, imageUrl) {
+    //   firebase.database().ref('users/' + userId).set({
+    //     username: name,
+    //     email: email,
+    //     profile_picture : imageUrl
+    //   })
+    // },
   }
   //   $_veeValidate: {
   //     validator: 'new'
